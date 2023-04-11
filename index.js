@@ -1,6 +1,6 @@
 const commands = require("probot-commands");
 
-const { updateIssueBody, updateComment } = require("./lib/badwordsFilter.js");
+const { updateIssueBody, updateComment } = require("./src/badwordsFilter.js");
 
 /**
  * This is the main entrypoint to your Probot app
@@ -13,7 +13,6 @@ module.exports = (app) => {
   // profranity filter for issues and comments
   app.on(["issues.opened", "issues.closed"], updateIssueBody);
   app.on(["issue_comment.created", "issue_comment.edited"], updateComment);
-
 
   // add label using "/label" command
   commands(app, "label", (context, command) => {
