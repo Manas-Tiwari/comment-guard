@@ -1,7 +1,16 @@
 # TestingBot
 
-> A GitHub App built with [Probot](https://github.com/probot/probot) that name describes it all
-> Filters profane words from issues and comments also warns user on use of these words.
+- A GitHub App built with [Probot](https://github.com/probot/probot) that name describes it all
+- Filters profane words from issues and comments also warns user on use of these words.
+
+
+## Examples
+- Add label with /label command
+![Add labels](public/addLabels.png)
+
+- Profane/Offensive words will be filtered.
+![filter profane words](public/warnUserForProfaneWords.png)
+
 
 ## Setup
 
